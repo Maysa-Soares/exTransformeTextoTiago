@@ -3,44 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Google Fonts -->
+    <title>Extensao TT</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Link para o CSS externo -->
     <link rel="stylesheet" href="style.css" />
-
-    <title>Extensão TT</title>
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <!-- Conteúdo principal -->
-    <main>
-      <div class="container-pai">
-        <input
-          type="text"
-          name="text"
-          id="input-text"
-          class="input-text"
-          maxlength="500"
-          placeholder="Digite o texto aqui"
-          required
-        />
+    <h1>test</h1>
+    <div class="container-pai">
+      <header class="cabecalho"></header>
+      <!-- Conteudo alunos -->
 
-        <div class="container-button">
-          <button type="button" class="btn" id="btnMai">MAIÚSCULAS</button>
-          <button type="button" class="btn" id="btnmin">minúsculas</button>
-        </div>
+      <input
+        type="text"
+        name="text"
+        id="input-text"
+        class="input-text"
+        maxlength="500"
+        placeholder="digite seu texto aqui"
+        required
+      />
 
-        <div id="result" class="result">Resultado:</div>
+      <div class="container-button">
+        <button>MAIÚSCULAS</button>
+        <button>minúscula</button>
       </div>
-    </main>
 
-    <!-- Link para o JavaScript -->
-    <script src="script.js"></script>
+      <div name="result" id="result" class="result">Resultado:</div>
+    </div>
   </body>
 </html>
