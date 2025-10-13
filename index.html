@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link para o CSS externo -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Extensão TT</title>
+  </head>
+  <body>
+    <!-- Conteúdo principal -->
+    <main>
+      <div class="container-pai">
+        <input
+          type="text"
+          name="text"
+          id="input-text"
+          class="input-text"
+          maxlength="500"
+          placeholder="Digite o texto aqui"
+          required
+        />
+
+        <div class="container-button">
+          <button type="button" class="btn" id="btnMai">MAIÚSCULAS</button>
+          <button type="button" class="btn" id="btnmin">minúsculas</button>
+        </div>
+
+        <div id="result" class="result">Resultado:</div>
+      </div>
+    </main>
+
+    <!-- Link para o JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

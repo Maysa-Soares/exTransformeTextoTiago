@@ -1,0 +1,9 @@
+{
+  "name": "Transforme Textos",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Esta extensão serve para transformar seus textos em letras MAIUSCULAS ou minusculas",
+  "action": {
+    "default_popup": "index.html"
+  }
+}
