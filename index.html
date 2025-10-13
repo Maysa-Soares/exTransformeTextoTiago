@@ -1,47 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Extensao TT</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <!-- Estrutura do Programa -->
     <div class="container-pai">
-      <header class="cabecalho"></header>
-      <!-- Conteudo alunos -->
-      <header class="cabecalho">
-        <p class="titulo-cabecalho">Transforme Texto</p>
-      </header>
+        <header class="cabecalho">
+          <img src="./icons/logo16px.jpg" alt="Imagem Logo">
+          <h1>TRANSFORME textos</h1>
+        </header> <!---Conteúdo alunos-->
+        <input type="text" name="text" id="input-text" class="input-text" maxlength="500" placeholder="Digite seu texto aqui" required>
+        
+        <div class="container-button">
+            <button type="button" class="btn" id="btnMaiuscula">MAIÚSCULA</button>
+            <button type="button" class="btn" id="btnMinuscula">minúscula</button>
+        </div>
 
-      <!-- Conteudo alunos -->
-      <input
-        type="text"
-        name="text"
-        id="input-text"
-        class="input-text"
-        maxlength="500"
-        placeholder="digite seu texto aqui"
-        required
-      />
-
-      <div class="container-button">
-        <button type="button" class="btn" id="btnMaiuscula">MAIÚSCULA</button>
-        <button type="button" class="btn" id="btnMinuscula">minúscula</button>
-      </div>
-
-      <div name="result" id="result" class="result">Resultado:</div>
+        <textarea name="result" id="result" class="result" placeholder="Resultado"></textarea>
+        <p class="rodape">Para mais informações, visite:</p>
+        <a href="http://" target="_blank" rel="noopener noreferrer">maysasoraes.com.br</a>
     </div>
-
-    <footer class="footer">
-      <p class="titulo-footer">© 2025 Maysa</p>
-    </footer>
+    <!-- Link do Javascript -->
+    <script src="script.js"></script>
   </body>
 </html>

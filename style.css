@@ -2,46 +2,72 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  /* Chamando a Fonte */
   font-family: "Ubuntu", sans-serif;
-  font-size: 12px;
   font-size: 0.85rem;
 
-  border: solid 1px rgb(184, 184, 184);
+  /* Bordas View */
+  /* border: solid 1px blue; */
 }
 
-.titulo-cabecalho {
-  font-weight: bold;
-  padding: 10px;
-}
-
+/* Layout App */
 .container-pai {
   width: 200px;
   height: 200px;
+  /* FlexBox */
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
+/* Configurações dos Botões */
 .container-button {
   width: 160px;
   padding: 5px;
+  gap: 10px;
+
+  /* FlexBox */
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .btn {
   cursor: pointer;
-  width: 77px;
-  padding: 3px;
-  border-radius: 3px;
-  margin: 1px;
+  /* width: 77px; */
+  padding: 2px 9px;
+  border-radius: 2px;
+  border: solid 1px black;
 }
 
-.footer {
-  width: 200px;
+/* Desafio */
+/* Cabeçalho */
+.cabecalho {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: end;
+  gap: 7px;
+  padding: 7px;
+}
+
+.cabecalho h1 {
+  font-size: 13px;
+}
+
+/*Entrada de Dados*/
+.input-text {
+  width: 167px;
+  padding: 2px 3px;
+}
+
+/* Resultado */
+.result {
+  resize: none;
+  width: 165px;
+  padding: 3px 0px 40px 5px;
+}
+
+/* Rodapé */
+.rodape {
+  margin-top: 5px;
 }
