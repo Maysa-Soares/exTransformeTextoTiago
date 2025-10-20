@@ -41,6 +41,15 @@
   border: solid 1px black;
 }
 
+.btnlimpar{
+  margin-bottom: 5px;
+    cursor: pointer;
+  /* width: 77px; */
+  padding: 2px 9px;
+  border-radius: 2px;
+  border: solid 1px black;
+}
+
 /* Desafio */
 /* Cabeçalho */
 .cabecalho {
