@@ -1,15 +1,31 @@
 window.document.addEventListener("DOMContentLoaded", function () {
-  window.document
+  // Botão MAIÚSCULA
+  document
     .querySelector("#btnMaiuscula")
     .addEventListener("click", function () {
       let inputText = document.querySelector("#input-text").value;
-      document.querySelector("#result").innerHTML = inputText.toUpperCase();
+      document.querySelector("#result").value = inputText.toUpperCase();
     });
 
-  window.document
+  // Botão minúscula
+  document
     .querySelector("#btnMinuscula")
     .addEventListener("click", function () {
       let inputText = document.querySelector("#input-text").value;
-      document.querySelector("#result").innerHTML = inputText.toLowerCase();
+      document.querySelector("#result").value = inputText.toLowerCase();
+    });
+
+  // Botão Primeira Maiúscula
+  document
+    .querySelector("#btnCapitalizar")
+    .addEventListener("click", function () {
+      let inputText = document.querySelector("#input-text").value.trim();
+      if (inputText.length === 0) {
+        document.querySelector("#result").value = "";
+        return;
+      }
+      let capitalizado =
+        inputText.charAt(0).toUpperCase() + inputText.slice(1).toLowerCase();
+      document.querySelector("#result").value = capitalizado;
     });
 });
