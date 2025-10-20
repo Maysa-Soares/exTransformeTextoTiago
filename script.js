@@ -28,4 +28,9 @@ window.document.addEventListener("DOMContentLoaded", function () {
         inputText.charAt(0).toUpperCase() + inputText.slice(1).toLowerCase();
       document.querySelector("#result").value = capitalizado;
     });
+  // Botão Limpar
+  document.querySelector("#btnLimpar").addEventListener("click", function () {
+    document.querySelector("#input-text").value = "";
+    document.querySelector("#result").value = "";
+  });
 });
