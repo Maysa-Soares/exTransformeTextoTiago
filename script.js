@@ -33,4 +33,20 @@ window.document.addEventListener("DOMContentLoaded", function () {
     document.querySelector("#input-text").value = "";
     document.querySelector("#result").value = "";
   });
+  // Botão Copiar
+  document.querySelector("#btnCopiar").addEventListener("click", function () {
+    let resultado = document.querySelector("#result").value;
+    if (resultado.trim() !== "") {
+      navigator.clipboard
+        .writeText(resultado)
+        .then(() => {
+          alert("Texto copiado para a área de transferência!");
+        })
+        .catch((err) => {
+          alert("Erro ao copiar texto: " + err);
+        });
+    } else {
+      alert("Nada para copiar!");
+    }
+  });
 });
