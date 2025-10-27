@@ -28,11 +28,6 @@ window.document.addEventListener("DOMContentLoaded", function () {
         inputText.charAt(0).toUpperCase() + inputText.slice(1).toLowerCase();
       document.querySelector("#result").value = capitalizado;
     });
-  // Botão Limpar
-  document.querySelector("#btnLimpar").addEventListener("click", function () {
-    document.querySelector("#input-text").value = "";
-    document.querySelector("#result").value = "";
-  });
   // Botão Copiar
   document.querySelector("#btnCopiar").addEventListener("click", function () {
     let resultado = document.querySelector("#result").value;
@@ -48,5 +43,10 @@ window.document.addEventListener("DOMContentLoaded", function () {
     } else {
       alert("Nada para copiar!");
     }
+  });
+    // Botão Limpar
+  document.querySelector("#btnLimpar").addEventListener("click", function () {
+    document.querySelector("#input-text").value = "";
+    document.querySelector("#result").value = "";
   });
 });
