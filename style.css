@@ -65,7 +65,7 @@
 
 /*Entrada de Dados*/
 .input-text {
-  width: 167px;
+  width: 185px;
   padding: 2px 3px;
 }
 
@@ -73,12 +73,12 @@
 .result {
   resize: none;
   width: 185px;
-  padding: 3px 0px 40px 5px;
+  padding: 3px 0px 35px 5px;
   margin-top: 5px;
 }
 
 /* Rodapé */
 .rodape {
-  margin-top: 5px;
+  margin-top: 2px;
   text-align: center;
 }
