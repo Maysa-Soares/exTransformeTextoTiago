@@ -24,8 +24,20 @@ window.document.addEventListener("DOMContentLoaded", function () {
         document.querySelector("#result").value = "";
         return;
       }
-      let capitalizado =
-        inputText.charAt(0).toUpperCase() + inputText.slice(1).toLowerCase();
+
+      // Coloca tudo em minúsculas primeiro
+      let texto = inputText.toLowerCase();
+
+      // Divide por ponto e trata cada parte
+      let frases = texto.split(".").map((frase) => {
+        frase = frase.trim();
+        if (frase.length === 0) return "";
+        return frase.charAt(0).toUpperCase() + frase.slice(1);
+      });
+
+      // Junta novamente com ponto e espaço
+      let capitalizado = frases.join(". ");
+
       document.querySelector("#result").value = capitalizado;
     });
   // Botão Copiar
@@ -44,7 +56,7 @@ window.document.addEventListener("DOMContentLoaded", function () {
       alert("Nada para copiar!");
     }
   });
-    // Botão Limpar
+  // Botão Limpar
   document.querySelector("#btnLimpar").addEventListener("click", function () {
     document.querySelector("#input-text").value = "";
     document.querySelector("#result").value = "";
