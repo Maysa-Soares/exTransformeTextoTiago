@@ -15,33 +15,35 @@ window.document.addEventListener("DOMContentLoaded", function () {
       document.querySelector("#result").value = inputText.toLowerCase();
     });
 
- // Botão Primeira Maiúscula
-document.querySelector("#btnCapitalizar").addEventListener("click", function () {
-  let inputText = document.querySelector("#input-text").value.trim();
-  if (inputText.length === 0) {
-    document.querySelector("#result").value = "";
-    return;
-  }
+  // Botão Primeira Maiúscula
+  document
+    .querySelector("#btnCapitalizar")
+    .addEventListener("click", function () {
+      let inputText = document.querySelector("#input-text").value.trim();
+      if (inputText.length === 0) {
+        document.querySelector("#result").value = "";
+        return;
+      }
 
-  // Coloca tudo em minúsculas primeiro
-  let texto = inputText.toLowerCase();
+      // Coloca tudo em minúsculas primeiro
+      let texto = inputText.toLowerCase();
 
-  // Divide o texto por pontuação (.!?), mantendo os sinais
-  let frases = texto.split(/([.!?]\s*)/);
+      // Divide o texto por pontuação (.!?), mantendo os sinais
+      let frases = texto.split(/([.!?]\s*)/);
 
-  // Capitaliza a primeira letra de cada frase
-  for (let i = 0; i < frases.length; i += 2) {
-    let frase = frases[i].trim();
-    if (frase.length > 0) {
-      frases[i] = frase.charAt(0).toUpperCase() + frase.slice(1);
-    }
-  }
+      // Capitaliza a primeira letra de cada frase
+      for (let i = 0; i < frases.length; i += 2) {
+        let frase = frases[i].trim();
+        if (frase.length > 0) {
+          frases[i] = frase.charAt(0).toUpperCase() + frase.slice(1);
+        }
+      }
 
-  // Junta novamente (mantendo pontuação)
-  let capitalizado = frases.join("");
+      // Junta novamente (mantendo pontuação)
+      let capitalizado = frases.join("");
 
-  document.querySelector("#result").value = capitalizado;
-});
+      document.querySelector("#result").value = capitalizado;
+    });
   // Botão Copiar
   document.querySelector("#btnCopiar").addEventListener("click", function () {
     let resultado = document.querySelector("#result").value;
